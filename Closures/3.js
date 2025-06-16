@@ -12,3 +12,13 @@ const expect = (val) => {
   };
 };
 console.log(expect(5).toBe(5));
+/* 
+what i learned:
+In Javascript if a function returns an object you can 
+immediactely call a method on that object using dot notation "."
+
+note about closure here:
+expect() fnishes executing befoe i call toBe method.
+it finishes executing immediately when it returns the object with toBe and notToBe methods. "expect(5)."
+The returned object’s methods (toBe, notToBe) are called after expect has finished.
+*/
