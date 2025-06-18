@@ -20,7 +20,7 @@ const filter = (arr, greaterThanTen) => {
   for (let i = 0; i < arr.length; i++) {
     if (greaterThanTen(arr[i])) {
     //   idk[i] = greaterThanTen(arr[i]);  this is wrong because on idk[1] this index will get skipped and will stay empty
-    idk[i].push(arr[i]); // this is right way. we push the next available empty index 
+    idk[i].push(arr[i]); // this is the right way. we push the value to the next available empty index 
     }
   }
   return idk;
