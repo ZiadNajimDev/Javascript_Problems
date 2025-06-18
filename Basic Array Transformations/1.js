@@ -6,13 +6,13 @@ The returned array should be created such that returnedArray[i] = fn(arr[i], i).
 Please solve it without the built-in Array.map method.
 */
 
-const SumBothNumbers = (arr) => {
-  return arr + 1;
+const SumBothNumbers = (arr , i) => {
+  return arr + i;
 }
 const map = (arr , fn) => {
     let  backupArray = [];
     for(let i = 0; i < arr.length ; i++){
-         backupArray[i] = SumBothNumbers(arr[i]);
+         backupArray[i] = SumBothNumbers(arr[i] , i);
     }
     return backupArray;
   }
